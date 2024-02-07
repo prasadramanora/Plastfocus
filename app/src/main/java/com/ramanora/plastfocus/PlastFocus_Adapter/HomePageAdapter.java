@@ -4,7 +4,6 @@ import static android.content.Context.MODE_PRIVATE;
 
 import android.app.AlertDialog;
 import android.app.FragmentManager;
-import android.app.Notification;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -28,8 +27,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.ramanora.plastfocus.PlastFocus_Activities.ActivityNotification;
-import com.ramanora.plastfocus.PlastFocus_Activities.GoToMap;
-import com.ramanora.plastfocus.Platsfocus_ImageMapping.ActivityImageMappingSingle;
+import com.ramanora.plastfocus.PlastFocus_Activities.GoToExhibiionMap;
 import com.ramanora.plastfocus.PlastFocus_Database.DataBaseHandler;
 import com.ramanora.plastfocus.R;
 import com.ramanora.plastfocus.PlastFocus_VollyApiClasess.VolleySingelton;
@@ -179,7 +177,7 @@ public class HomePageAdapter extends RecyclerView.Adapter<HomePageAdapter.ViewHo
                    /* intent[0] = new Intent(context, ActivityNewsAndEventMainPage.class);
                     //    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(UrlConstants.URL_SOCIAL_FACEBOOK));
                     context.startActivity(intent[0]);*/
-                    intent[0] = new Intent(context, GoToMap.class);
+                    intent[0] = new Intent(context, GoToExhibiionMap.class);
                     context.startActivity(intent[0]);
                     break;
 

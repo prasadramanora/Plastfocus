@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 public class PlastFocusModelClass implements Serializable {
 
-    String Mid,productnames;
+    String Mid, productnames;
 
     public String getProductnames() {
         return productnames;
@@ -110,9 +110,8 @@ public class PlastFocusModelClass implements Serializable {
     String meeting_time;
     String meeting_start_date;
     String meeting_status;
-String count
-        ,company_name, salutation, coordinator_name, coordinator_last_name, coordinator_designation, address, country, state, city, pincode, mobile_number, alternate_number, fax, email, alternate_email, website, product_group, company_profile, hall, stall_number, cord_x, cord_y;
-    private String mtxt,id, Notification,tv_itemname;
+    String count, company_name, salutation, coordinator_name, coordinator_last_name, coordinator_designation, address, country, state, city, pincode, mobile_number, alternate_number, fax, email, alternate_email, website, product_group, company_profile, hall, stall_number, cord_x, cord_y;
+    private String mtxt, id, Notification, tv_itemname;
 
     public String getId() {
         return id;
@@ -317,15 +316,6 @@ String count
     private int mImg;
 
 
-    public PlastFocusModelClass(String mtxt, int mImg) {
-        this.mtxt = mtxt;
-        this.mImg = mImg;
-    }
-
-    public PlastFocusModelClass() {
-
-    }
-
     public String getNotification() {
         return Notification;
     }
@@ -333,6 +323,7 @@ String count
     public void setNotification(String notification) {
         Notification = notification;
     }
+
     public String getMtxt() {
         return mtxt;
     }

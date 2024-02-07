@@ -62,29 +62,8 @@ public class VIsitorLoginScreen extends AppCompatActivity implements View.OnClic
     String str_FullPhone = "";
     TextView tv_registration, tv_exhibitor;
     Button btn_submit;
-    String id = "", company_name = "", str_QrCode = "",
-            salutation = "",
-            coordinator_name = "",
-            coordinator_last_name = "",
-            coordinator_designation = "",
-            address = "",
-            country = "",
-            state = "",
-            city = "",
-            pincode = "",
-            mobile_number = "",
-            alternate_number = "",
-            fax = "",
-            email = "",
-            alternate_email = "",
-            website = "",
-            product_group = "",
-            company_profile = "",
-            hall = "",
-            stall_number = "",
-            cord_x = "",
-            cord_y = "";
-    ScrollView scrollview;
+    String  str_QrCode = "";
+
 
     @SuppressLint("MissingInflatedId")
     @Override

@@ -17,17 +17,15 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ramanora.plastfocus.PlastFocus_Adapter.ExhibitorMainAdapter;
 import com.ramanora.plastfocus.PlastFocus_Adapter.ExhibitorMapAdapter;
 import com.ramanora.plastfocus.PlastFocus_Database.DataBaseHandler;
-import com.ramanora.plastfocus.PlastFocus_Fragments.AtoZExhibitorListFragment;
 import com.ramanora.plastfocus.PlastFocus_ModelClasess.PlastFocusModelClass;
 import com.ramanora.plastfocus.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MapList extends AppCompatActivity implements ExhibitorMapAdapter.OnItemClickListener {
+public class ChoosExhibitorMapActivity extends AppCompatActivity implements ExhibitorMapAdapter.OnItemClickListener {
     LinearLayoutManager manager;
     public static String filterkey = "";
 
@@ -42,7 +40,7 @@ public class MapList extends AppCompatActivity implements ExhibitorMapAdapter.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.maplist);
+        setContentView(R.layout.choosexhibitorname);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#2d355a")));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         editTextsearch = (SearchView) findViewById(R.id.editTextsearch);
@@ -94,7 +92,7 @@ public class MapList extends AppCompatActivity implements ExhibitorMapAdapter.On
         protected String doInBackground(Void... voids) {
 
             // hideKeyboard(getActivity());
-            DataBaseHandler dataBaseHandler = new DataBaseHandler(MapList.this);
+            DataBaseHandler dataBaseHandler = new DataBaseHandler(ChoosExhibitorMapActivity.this);
             mArrayCallRList = dataBaseHandler.getExhibitorData();
             // Return the result
             return "Background task completed";
@@ -104,11 +102,11 @@ public class MapList extends AppCompatActivity implements ExhibitorMapAdapter.On
         @Override
         protected void onPostExecute(String result) {
             if (mArrayCallRList.size() > 0) {
-                azExhibitorlistAdapter = new ExhibitorMapAdapter(MapList.this, mArrayCallRList, MapList.this);
+                azExhibitorlistAdapter = new ExhibitorMapAdapter(ChoosExhibitorMapActivity.this, mArrayCallRList, ChoosExhibitorMapActivity.this);
                 recyclerView.setAdapter(azExhibitorlistAdapter);
                 azExhibitorlistAdapter.notifyDataSetChanged();
             } else {
-                Toast.makeText(MapList.this, "No Data Found", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ChoosExhibitorMapActivity.this, "No Data Found", Toast.LENGTH_SHORT).show();
             }
 
 
@@ -149,9 +147,6 @@ public class MapList extends AppCompatActivity implements ExhibitorMapAdapter.On
         switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
-              /*  Intent i = new Intent(getApplicationContext(), ActivityMainHomePage.class);
-                startActivity(i);
-                finish();*/
                 break;
         }
         return true;
@@ -161,9 +156,7 @@ public class MapList extends AppCompatActivity implements ExhibitorMapAdapter.On
     public void onBackPressed() {
         super.onBackPressed();
         finish();
-       /* Intent i = new Intent(getApplicationContext(), ActivityMainHomePage.class);
-        startActivity(i);
-        finish();*/
+
     }
 
     private void getDatafromDB() {

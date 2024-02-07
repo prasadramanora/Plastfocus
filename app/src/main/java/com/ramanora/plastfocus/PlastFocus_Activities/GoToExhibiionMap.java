@@ -17,7 +17,7 @@ import com.ramanora.plastfocus.Platsfocus_ImageMapping.ImageSource;
 import com.ramanora.plastfocus.Platsfocus_ImageMapping.PinView;
 import com.ramanora.plastfocus.R;
 
-public class GoToMap extends AppCompatActivity {
+public class GoToExhibiionMap extends AppCompatActivity {
     Button btn_source, btn_desination, btn_viewmap;
     String s1="", d1="", s2="", d2="";
     PinView imageView;
@@ -52,11 +52,11 @@ public class GoToMap extends AppCompatActivity {
             public void onClick(View v) {
                 if(btn_source.getText().toString().equals("Select Source"))
                 {
-                    Toast.makeText(GoToMap.this, "Select Source Exhibitor Name", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(GoToExhibiionMap.this, "Select Source Exhibitor Name", Toast.LENGTH_SHORT).show();
 
                 }else if(btn_desination.getText().toString().equals("Select Destination"))
                 {
-                    Toast.makeText(GoToMap.this, "Select Destination Exhibitor Name", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(GoToExhibiionMap.this, "Select Destination Exhibitor Name", Toast.LENGTH_SHORT).show();
                 }else {
                     Intent i = new Intent(getApplicationContext(), FindSoueceAndDestinationMap.class);
                     i.putExtra("s1", s1);
@@ -71,7 +71,7 @@ public class GoToMap extends AppCompatActivity {
         btn_source.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), MapListWithDesination.class);
+                Intent i = new Intent(getApplicationContext(), SelectExhibitionMap.class);
                 i.putExtra("ActionaBarName","MyLocation");
                 startActivityForResult(i, 101);
             }
@@ -79,7 +79,7 @@ public class GoToMap extends AppCompatActivity {
         btn_desination.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), MapListWithDesination.class);
+                Intent i = new Intent(getApplicationContext(), SelectExhibitionMap.class);
                 i.putExtra("ActionaBarName","MyDestination");
                 startActivityForResult(i, 201);
             }

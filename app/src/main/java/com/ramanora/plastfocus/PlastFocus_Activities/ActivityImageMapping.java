@@ -40,7 +40,7 @@ Button btn_location,btn_destination;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.extension_pin_fragment);
+        setContentView(R.layout.exhibitionmap_marker);
         btn_location = (Button) findViewById(R.id.btn_location);
         btn_destination = (Button) findViewById(R.id.btn_destination);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#2d355a")));
@@ -57,7 +57,7 @@ Button btn_location,btn_destination;
                /* Intent i=new Intent(getApplicationContext(), MapList.class);
                 startActivity(i);*/
 
-                Intent i = new Intent(getApplicationContext(), MapList.class);
+                Intent i = new Intent(getApplicationContext(), ChoosExhibitorMapActivity.class);
                 i.putExtra("ActionaBarName","MyLocation");
                 startActivityForResult(i, 101);
             }
@@ -66,7 +66,7 @@ Button btn_location,btn_destination;
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(getApplicationContext(), MapList.class);
+                Intent i = new Intent(getApplicationContext(), ChoosExhibitorMapActivity.class);
                 i.putExtra("ActionaBarName","MyDestination");
                 startActivityForResult(i, 201);
                /* Intent i=new Intent(getApplicationContext(), MapList.class);

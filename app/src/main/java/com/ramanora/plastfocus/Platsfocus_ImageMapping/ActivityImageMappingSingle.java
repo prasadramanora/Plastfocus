@@ -4,23 +4,16 @@ import android.content.Intent;
 
 
 import android.graphics.Color;
-import android.graphics.PointF;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.ramanora.plastfocus.PlastFocus_Activities.ActivityMainHomePage;
-import com.ramanora.plastfocus.PlastFocus_Activities.GoToMap;
-import com.ramanora.plastfocus.PlastFocus_Activities.MapList;
+import com.ramanora.plastfocus.PlastFocus_Activities.ChoosExhibitorMapActivity;
 import com.ramanora.plastfocus.R;
-
-
-import java.util.ArrayList;
 
 /**
  * Created by amolrokade on 17/11/17.
@@ -37,7 +30,7 @@ public class ActivityImageMappingSingle extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_singleimage_mapping);
+        setContentView(R.layout.exhibhinmpwithmarker);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#2d355a")));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         imageView = (PinView) findViewById(R.id.imageView);
@@ -47,14 +40,14 @@ public class ActivityImageMappingSingle extends AppCompatActivity {
         btn_location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), MapList.class);
+                Intent i = new Intent(getApplicationContext(), ChoosExhibitorMapActivity.class);
                 startActivity(i);
             }
         });
         btn_finddestination.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), MapList.class);
+                Intent i = new Intent(getApplicationContext(), ChoosExhibitorMapActivity.class);
                 startActivity(i);
             }
         });

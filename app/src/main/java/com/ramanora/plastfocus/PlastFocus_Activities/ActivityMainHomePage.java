@@ -132,23 +132,7 @@ public class ActivityMainHomePage extends Activity {
             stall_number = "",
             cord_x = "",
             cord_y = "";
-    /*
-        private final int[] imageId = {
-                R.drawable.stonafigsi,
-                R.drawable.exhibitorliststona,
-                R.drawable.seminars,
-                R.drawable.newsstona,
-                R.drawable.mapstona,
-                // R.drawable.b2b, nnhhhhhhhhhhhhhhhhhhhhhhhhhhhh   hhhhh  hh  hhhhhhh h j
-                R.drawable.socialmediastona,
-                R.drawable.visitingcardstona,
-                R.drawable.myprofilestona,
-                R.drawable.feedbackstona
-                // R.drawable.myprofileupdate,
-                //R.drawable.fairfacilities,
-                //  R.drawable.feedbackstona,
-        };
-    */
+
     ArrayList<String> productnamelist = new ArrayList<>();
 
     private final int[] imageId = {
@@ -163,9 +147,7 @@ public class ActivityMainHomePage extends Activity {
             R.drawable.menu9,
             R.drawable.menu10,
 
-            // R.drawable.myprofileupdate,
-            //R.drawable.fairfacilities,
-            //  R.drawable.feedbackstona,
+
     };
     ArrayList<QrcodeModel> mArrayListQrCodeofflinesync;
     private final int[] imageIdExhibitors = {
@@ -180,9 +162,7 @@ public class ActivityMainHomePage extends Activity {
             R.drawable.menu9,
             R.drawable.menu10,
 
-            // R.drawable.myprofileupdate,
-            //R.drawable.fairfacilities,
-            //  R.drawable.feedbackstona,
+
     };
     int currentPage = 0;
     Timer timer;
@@ -227,7 +207,7 @@ public class ActivityMainHomePage extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ticker_activity);
+        setContentView(R.layout.homepagemenuitems);
         // this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         rl_mainhomepage = findViewById(R.id.rl_mainhomepage);
 
@@ -429,6 +409,21 @@ public class ActivityMainHomePage extends Activity {
         } else {
             changeTextStatus(false);
         }
+
+        mNotifCount = dataBaseHandler.getNotificationCount();
+
+        recyclerView = (RecyclerView) findViewById(R.id.rvNumbers);
+        recyclerView.setHasFixedSize(true);
+        layoutManager
+                = new GridLayoutManager(getApplicationContext(), 3);
+        recyclerView.setLayoutManager(layoutManager);
+        mArrayList = prepareData();
+        adapter = new HomePageAdapter(mArrayList, getApplicationContext());
+        recyclerView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+
+        LocalBroadcastManager.getInstance(this).registerReceiver(mRegistrationBroadcastReceiver,
+                new IntentFilter(Plastfocus_App_Api_List.PUSH_NOTIFICATION));
     }
 
     private void SendQrCodeScanDataOfflineSync(String company_name, String coordinator_designation, String address, String mobile_number, String coordinator_name, String email) {
@@ -663,20 +658,6 @@ public class ActivityMainHomePage extends Activity {
         super.onResume();
 
 
-        mNotifCount = dataBaseHandler.getNotificationCount();
-
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rvNumbers);
-        recyclerView.setHasFixedSize(true);
-        RecyclerView.LayoutManager layoutManager
-                = new GridLayoutManager(getApplicationContext(), 3);
-        recyclerView.setLayoutManager(layoutManager);
-        ArrayList<PlastFocusModelClass> mArrayList = prepareData();
-        HomePageAdapter adapter = new HomePageAdapter(mArrayList, getApplicationContext());
-        recyclerView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
-
-        LocalBroadcastManager.getInstance(this).registerReceiver(mRegistrationBroadcastReceiver,
-                new IntentFilter(Plastfocus_App_Api_List.PUSH_NOTIFICATION));
     }
 
     @Override

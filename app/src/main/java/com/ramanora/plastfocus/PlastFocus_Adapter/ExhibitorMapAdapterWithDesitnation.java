@@ -1,10 +1,7 @@
 package com.ramanora.plastfocus.PlastFocus_Adapter;
 
-import static android.app.Activity.RESULT_OK;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,8 +14,6 @@ import android.widget.TextView;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ramanora.plastfocus.PlastFocus_Activities.ActivityImageMapping;
-import com.ramanora.plastfocus.PlastFocus_Activities.GoToMap;
 import com.ramanora.plastfocus.PlastFocus_ModelClasess.PlastFocusModelClass;
 import com.ramanora.plastfocus.R;
 

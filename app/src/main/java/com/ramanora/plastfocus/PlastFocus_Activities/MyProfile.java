@@ -112,7 +112,7 @@ public class MyProfile extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lay_qr_code);
+        setContentView(R.layout.myprofile);
         dataBaseHandler = new DataBaseHandler(MyProfile.this);
         mArrayListQrCodeofflinesync = (ArrayList<QrcodeModel>) dataBaseHandler.getVisitorDataissync("NO");
         // Log.e("OfflineQrcode:", mArrayListQrCodeofflinesync.size() + "");

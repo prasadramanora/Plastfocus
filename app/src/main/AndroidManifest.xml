@@ -122,7 +122,7 @@
 
 
         <activity
-            android:name=".PlastFocus_Activities.MapList"
+            android:name=".PlastFocus_Activities.ChoosExhibitorMapActivity"
             android:label="Select Exhibitors"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
@@ -141,7 +141,7 @@
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateAlwaysHidden"></activity>
         <activity
-            android:name=".PlastFocus_Activities.GoToMap"
+            android:name=".PlastFocus_Activities.GoToExhibiionMap"
             android:label="Exhibition Map"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
@@ -160,7 +160,7 @@
             android:windowSoftInputMode="stateAlwaysHidden"></activity>
 
         <activity
-            android:name=".PlastFocus_Activities.MapListWithDesination"
+            android:name=".PlastFocus_Activities.SelectExhibitionMap"
             android:label="Select Exhibitor"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
