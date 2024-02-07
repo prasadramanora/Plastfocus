@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/logostrip1">
+
+        </ImageView>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+
+            android:layout_weight="2"
+            android:background="@drawable/logostrip">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/logostrip2">
+
+        </ImageView>
+
+    </LinearLayout>
+
+      <!--  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exconlogo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">-->
+    <!-- Editext for Search -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/ll_logo"
+        >
+<TextView
+    android:layout_width="wrap_content"
+    android:textSize="16sp"
+    android:id="@+id/tv_serachtype"
+    android:textColor="@color/colurprimary"
+    android:text="Filter By Hall"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_height="wrap_content">
+
+</TextView>
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextsearch"
+        android:clickable="true"
+       android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/ll_logo"
+        android:background="@drawable/textvewborder"
+        android:layout_gravity="right"
+
+        />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_exhibitor_company"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/editTextsearch"
+                            >
+
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+<!--
+                </ScrollView>
+
+        </RelativeLayout>-->
+        <!--
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:src="@drawable/ad1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />-->
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+    <!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context="com.app.exhibitionz.excon.exhibitorlist.Hall.Fragment.CountryCompanyNameFragment"
+        android:background="@color/blue"
+        >
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_exhibitor_company"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    -->

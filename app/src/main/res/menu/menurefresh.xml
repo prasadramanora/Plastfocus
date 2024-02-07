@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item
+        android:id="@+id/action_button_home"
+        android:icon="@drawable/btn_home"
+        android:title="Go home"
+        app:showAsAction="ifRoom"></item>-->
+
+    <item
+        android:id="@+id/action_list"
+
+        android:title="action_notification"
+        android:visible="false"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_refresh"
+                android:icon="@drawable/logout"
+                android:title="Refresh Exhibitor"
+                android:visible="false"
+                app:showAsAction="ifRoom"></item>
+
+            <item
+                android:id="@+id/action_deleteaccount"
+                android:icon="@drawable/deleteaccount"
+                android:title="Delete Account"
+                android:visible="false"
+                app:showAsAction="ifRoom" />
+
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_view_items"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginLeft="2dp"
+    android:orientation="vertical"
+
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="2dp"
+    android:padding="4dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+      android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:src="@drawable/menu1"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_itemname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Menu1"
+        android:textColor="@color/colurprimary"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+    <!--  <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:scaleType="fitXY"
+          android:src="@mipmap/ic_launcher"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginRight="5dp"
+          />
+
+
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/activity_horizontal_margin"
+          android:textColor="#000"
+          android:layout_below="@+id/imageView"
+          android:layout_centerHorizontal="true"
+          android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+          android:layout_marginTop="1dp"
+          android:layout_marginBottom="2dp"
+          android:text="item name"
+          android:textSize="12sp"
+
+
+
+
+
+          />
+  -->
+
+</LinearLayout>

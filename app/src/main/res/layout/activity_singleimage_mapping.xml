@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.ramanora.plastfocus.Platsfocus_ImageMapping.PinView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+      android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:background="@drawable/buttunborder"
+            android:text="My Location"
+            android:textColor="#fff">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_finddestination"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:background="@drawable/buttunborder"
+            android:text="My Destination"
+            android:textColor="#fff">
+
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

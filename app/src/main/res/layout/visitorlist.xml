@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/ll_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.25"
+            android:background="@drawable/logostrip1">
+
+        </ImageView>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.50"
+            android:background="@drawable/logostrip"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.25"
+            android:background="@drawable/logostrip2">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_below="@+id/ll_logo"
+        android:background="@color/colurprimary"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Exhibitors iVisited"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/iv_downloadcsv"
+            android:layout_height="30dp"
+           android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/download">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_view"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="74dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/iv_sync"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/sync">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+       android:layout_marginBottom="5dp"
+        android:background="@drawable/buttunborder"
+        android:text="Scan Qr Code"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textStyle="bold">
+
+    </Button>
+</RelativeLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="2dp"
+                >
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logostrip"
+                    android:adjustViewBounds="true"
+                    android:fitsSystemWindows="true"
+
+                    android:layout_marginBottom="10dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:adjustViewBounds="true"
+                     />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp">
+
+
+                        <!--//facebook-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/llfacebook">
+
+
+                            <ImageView
+
+                                android:layout_width="0dp"
+                                android:layout_height="71dp"
+                                android:layout_weight="0.33"
+                                android:padding="10dp"
+                                android:layout_margin="4dp"
+
+
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.66"
+                                android:text="Facebook"
+                                android:padding="10dp"
+                                android:layout_margin="4dp"
+                                android:textColor="#fff"
+                                android:textSize="20dp"
+                                android:layout_gravity="center"/>
+
+
+                        </LinearLayout>
+
+                        <!--//twitter-->
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/llTwitter">
+
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.33"
+                                android:layout_height="71dp"
+                                android:padding="10dp"
+                                android:layout_margin="4dp"
+
+
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.66"
+                                android:text="Twitter"
+                                android:padding="10dp"
+                                android:layout_margin="4dp"
+                                android:textColor="#fff"
+                                android:textSize="20dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+
+
+                   <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/llyoutube">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="71dp"
+                                android:layout_margin="4dp"
+                                android:layout_weight="0.33"
+                                android:padding="10dp"
+                                 />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.66"
+                                android:text="Youtube"
+                                android:padding="10dp"
+                                android:layout_margin="4dp"
+                                android:textColor="#fff"
+                                android:textSize="20dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/llgoogleplus">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="71dp"
+                                android:layout_margin="4dp"
+                                android:layout_weight="0.33"
+                                android:padding="10dp"
+
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.66"
+                                android:text="Google+"
+                                android:padding="10dp"
+                                android:layout_margin="4dp"
+                                android:textColor="#fff"
+                                android:textSize="20dp"
+                                android:layout_gravity="center"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+                        <!--//linkedin-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/lllinkedin">
+
+
+
+                            <ImageView
+
+                                android:layout_width="0dp"
+                                android:layout_height="71dp"
+                                android:layout_weight="0.33"
+                                android:padding="10dp"
+                                android:layout_margin="4dp"
+
+                                />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.66"
+                                android:text="LinkedIn"
+                                android:padding="10dp"
+                                android:layout_margin="4dp"
+                                android:textColor="#fff"
+                                android:textSize="20dp"
+                                android:layout_gravity="center"/>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+

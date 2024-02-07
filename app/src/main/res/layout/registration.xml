@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/regid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/ll_regiform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/textvewborder"
+                    android:hint=" Name(*)"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:textSize="12sp">
+
+                </EditText>
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/textvewborder"
+                    android:hint=" Email(*)"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:textSize="12sp">
+
+                </EditText>
+                <EditText
+                    android:id="@+id/edt_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/textvewborder"
+                    android:hint=" Mobile(*)"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:textSize="12sp">
+
+                </EditText>
+                <EditText
+                    android:id="@+id/edt_orgnization"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/textvewborder"
+                    android:hint=" Company(*)"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:textSize="12sp">
+
+                </EditText>
+                <EditText
+                    android:id="@+id/edt_designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/textvewborder"
+                    android:hint=" Designation(*)"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:textSize="12sp">
+
+                </EditText>
+
+
+
+                <EditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="textCapSentences"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/textvewborder"
+                    android:hint=" Address(*)"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:textSize="12sp">
+
+                </EditText>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/edt_city"
+                    android:background="@drawable/textvewborder"
+                    android:inputType="textCapSentences"
+                    android:hint=" City(*)"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:textSize="12sp">
+
+                </EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/edt_state"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/textvewborder"
+                    android:inputType="textCapSentences"
+                    android:hint=" State(*)"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:textSize="12sp">
+
+                </EditText>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/edt_country"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/textvewborder"
+                    android:inputType="textCapSentences"
+                    android:hint=" Country(*)"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:textSize="12sp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/edt_zipcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/textvewborder"
+                    android:hint=" Zipcode(*)"
+                    android:inputType="number"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textSize="12sp">
+
+                </EditText>
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Group *"
+                    android:layout_marginTop="9dp"
+                    android:textColor="@color/colursecondary"
+                    android:textStyle="bold">
+
+                </TextView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rl_categorygroup1"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/tv_cat1"
+                        android:background="@drawable/textviewborder"
+                        android:text="Emerging Technology"
+                        android:gravity="center"
+                        android:textColor="@color/colurprimary"
+                        android:textStyle="bold"
+                        android:layout_height="40dp">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/iv_lowerarraow"
+                        android:background="@drawable/lowerarrow"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/iv_upperarraow"
+                        android:visibility="gone"
+                        android:background="@drawable/upperarraow"
+                        android:layout_marginTop="13dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+                </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:orientation="vertical"
+   android:id="@+id/rl_categoryitems1"
+    android:layout_height="wrap_content">
+
+
+
+</LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rl_categorygroup2"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/tv_cat2"
+                        android:background="@drawable/textviewborder"
+                        android:text="Machinery And Automation"
+                        android:gravity="center"
+                        android:textColor="@color/colurprimary"
+                        android:textStyle="bold"
+                        android:layout_height="40dp">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/iv_lowerarraow2"
+                        android:background="@drawable/lowerarrow"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/iv_upperarraow2"
+                        android:visibility="gone"
+                        android:background="@drawable/upperarraow"
+                        android:layout_marginTop="13dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/rl_categoryitems2"
+                    android:layout_height="wrap_content">
+
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rl_categorygroup3"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/tv_cat3"
+                        android:background="@drawable/textviewborder"
+                        android:text="Mould And Dies"
+                        android:textColor="@color/colurprimary"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="40dp">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/iv_lowerarraow3"
+                        android:background="@drawable/lowerarrow"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/iv_upperarraow3"
+                        android:visibility="gone"
+                        android:background="@drawable/upperarraow"
+                        android:layout_marginTop="13dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/rl_categoryitems3"
+                    android:layout_height="wrap_content">
+
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rl_categorygroup4"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/tv_cat4"
+                        android:background="@drawable/textviewborder"
+                        android:text="Packaging and Finished Goods"
+                        android:gravity="center"
+                        android:textColor="@color/colurprimary"
+                        android:textStyle="bold"
+                        android:layout_height="40dp">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/iv_lowerarraow4"
+                        android:background="@drawable/lowerarrow"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/iv_upperarraow4"
+                        android:visibility="gone"
+                        android:background="@drawable/upperarraow"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/rl_categoryitems4"
+                    android:layout_height="wrap_content">
+
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/rl_categorygroup5"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/tv_cat5"
+                        android:textColor="@color/colurprimary"
+                        android:background="@drawable/textviewborder"
+                        android:text="Raw - Materials/Services"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="40dp">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/iv_lowerarraow5"
+                        android:background="@drawable/lowerarrow"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/iv_upperarraow5"
+                        android:visibility="gone"
+                        android:background="@drawable/upperarraow"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/rl_categoryitems5"
+                    android:layout_height="wrap_content">
+
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rl_categorygroup6"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/tv_cat6"
+                        android:textColor="@color/colurprimary"
+                        android:background="@drawable/textviewborder"
+                        android:text="Recycling and Green Solutions"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="40dp">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/iv_lowerarraow6"
+                        android:background="@drawable/lowerarrow"
+                        android:layout_marginTop="13dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/iv_upperarraow6"
+                        android:visibility="gone"
+                        android:background="@drawable/upperarraow"
+                        android:layout_marginTop="13dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/rl_categoryitems6"
+                    android:layout_height="wrap_content">
+
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_below="@+id/expandableListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttunborder"
+                    android:text="Register"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    >
+
+                </Button>
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/btn_submit"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="18dp"
+                    android:text="Already have Account? Login"
+                    android:textColor="@color/colurprimary"
+                    android:textSize="14sp"
+                   >
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

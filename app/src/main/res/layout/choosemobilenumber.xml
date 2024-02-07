@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/textvewborder"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorvisitorReg"
+        android:gravity="center"
+        android:text="Choose Mobile No"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_mobile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Mobile1"
+        android:textColor="#000"
+        android:textSize="16dp">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_mobile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Mobile2"
+        android:textColor="#000"
+        android:textSize="16dp">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view2"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent">
+
+    </View>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:id="@+id/btn_cancel"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttunborderorange"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textStyle="bold">
+
+    </Button>
+</LinearLayout>

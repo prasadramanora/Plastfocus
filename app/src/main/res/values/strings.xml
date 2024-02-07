@@ -1,0 +1,105 @@
+<resources>
+
+    //visitor
+    <string name="app_name">PlastFocus</string>
+    <string name="enter_visitor_full_name">Enter Full Name</string>
+    <string name="enter_visitor_designation">Enter Designation</string>
+    <string name="enter_visitor_company">Enter Company Name</string>
+    <string name="enter_visitor_country">Select Country</string>
+    <string name="enter_visitor_city">Enter City</string>
+    <string name="enter_visitor_phone">Enter Mobile Number</string>
+
+    <string name="enter_visitor_other">Other</string>
+    <string name="enter_visitor_type">Select Visitor Type</string>
+
+
+    <string name="enter_visitor_email">Enter Valid Email</string>
+
+
+    <string name="enter_visitor_password">Enter Password</string>
+    <string name="enter_visitor_re_password">Re-Confirm Password</string>
+
+    <string name="enter_visitor_state">Select State</string>
+
+    <string name="visitor_register">Submit</string>
+
+    <string name="action_search">Search</string>
+    <string name="ok">OK</string>
+
+    <!-- //exibitor registration
+
+    <string name="enter_exhibitor_full_name">Enter full name</string>
+    <string name="enter_exhibitor_email">Enter valid email</string>
+    <string name="enter_exhibitor_phone">Enter Phone</string>
+    <string name="enter_exhibitor_company">Enter company Name</string>
+    <string name="enter_exhibitor_password">Enter password</string>
+    <string name="enter_exhibitor_re_password">Re-enter password</string>
+    <string name="enter_exhibitor_designation">Enter designation</string>
+    <string name="enter_exhibitor_company_website">Enter website</string>
+    <string name="enter_exhibitor_address">Enter address</string>
+    <string name="enter_exhibitor_street_locality">Enter street/locality </string>
+    <string name="enter_exhibitor_area">Enter area</string>
+    <string name="enter_exhibitor_city">Enter city</string>
+    <string name="enter_exhibitor_state">Select state</string>
+    <string name="enter_exhibitor_country">Enter country</string>
+    <string name="exhibitor_register">Register</string>-->
+
+
+    <!-- //checkbox String
+
+    <string name="visitor_register_chk_Heading1">Equipment, Vehicles, Material Handling</string>
+    <string name="visitor_register_chk_Heading2">Material, Mixture, Plant and Machinery</string>
+
+
+    //Login Button string
+    <string name="Login">Login</string>
+-->
+
+    // Intro Screen
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">My Profile</string>
+    <string name="slide_1_desc">Scan QR Code</string>
+
+    <string name="slide_2_title">Exhibitor List </string>
+    <string name="slide_2_desc">Know the Exhibitors @ EXCON 2017</string>
+
+    <string name="slide_3_title">Products</string>
+    <string name="slide_3_desc">Technologically advanced products</string>
+
+    <string name="slide_4_title">News And Updates</string>
+    <string name="slide_4_desc">Stay upto date with Industry News and Trivia</string>
+
+
+    //text
+
+    <string name="title_register">Register Here</string>
+    <string name="title_qrcodescanner">Here is your Personal QrCode......</string>
+    <string name="title_scanned_qrcode">Scanned QR Code</string>
+    <string name="title_activity_qr_code">QrCodeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="partnerinfo" formatted="true"> The Confederation of Indian Industry (CII) works to
+        create and sustain an environment conducive to the development of India,
+        partnering industry, Government and civil society, through advisory
+        and consultative processes.
+</string>
+    <string name="generic_server_down">Server Down</string>
+    <string name="no_internet">No Interet Connection</string>
+    <string name="generic_error">Server Genric Error</string>
+    <string name="dialog_title">Error Message</string>
+    <string name="user_exists">User Exits</string>
+    <string name="notification_channel_id">11</string>
+    <string name="qr_code_scan_instruction">Scan QR Code</string>
+    <string name="accept">accept</string>
+    <string name="default_notification_channel_id">12</string>
+</resources>

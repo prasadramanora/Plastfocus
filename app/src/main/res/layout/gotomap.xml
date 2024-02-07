@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+    <com.ramanora.plastfocus.Platsfocus_ImageMapping.PinView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_buttuns"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+       android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_source"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttunborder"
+            android:text="My Location"
+            android:textAllCaps="false"
+            android:padding="4dp"
+            android:textColor="#fff"
+            android:textSize="16sp">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:id="@+id/btn_desination"
+            android:background="@drawable/buttunborder"
+            android:text="My Destination"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_viewmap"
+        android:layout_below="@+id/ll_buttuns"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttunborder"
+        android:text="View Map"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp">
+
+    </Button>
+</RelativeLayout>

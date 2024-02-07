@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+    <LinearLayout
+        android:id="@+id/ll_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.25"
+            android:background="@drawable/logostrip1">
+
+        </ImageView>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.50"
+            android:background="@drawable/logostrip"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.25"
+            android:background="@drawable/logostrip2">
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/ll_logo"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/tv_serachtype"
+            android:textColor="@color/colurprimary"
+            android:text="Filter By Product"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content">
+        </TextView>
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextsearch"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:clickable="true"
+            android:background="@drawable/textvewborder"
+            android:layout_gravity="right"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_exhibitor_company"
+            android:layout_width="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/logo"
+            >
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

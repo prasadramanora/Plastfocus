@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".PlastFocus_Activities.MyProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/white"
+                        android:fitsSystemWindows="true"
+                        android:src="@drawable/logostrip" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:adjustViewBounds="true"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txtProfileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/qrname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/qrtextcolor"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Ajinkya Bayas"
+                    android:textColor="@color/colurprimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_horizontal"
+                    android:text="Ajinkya Bayas"
+                    android:textColor="@color/colurprimary"
+                    android:textSize="15dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Ajinkya Bayas"
+                    android:textColor="@color/colurprimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_horizontal"
+                    android:text="Ajinkya Bayas"
+                    android:textColor="@color/colurprimary"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <View
+                    android:id="@+id/tv_view"
+                    android:layout_width="200dp"
+                    android:layout_height="2dp"
+
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginTop="10dp"
+
+                    android:background="#d3d3d3">
+
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Address">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="Address"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/buttunborder"
+                    android:scaleType="fitXY"
+                    android:text="Logout"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:text="Delete Account"
+                    android:textColor="@color/colurprimary"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+
+
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+
+
+        >
+
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:maxLines="10"
+            android:text="Scan QR Code"
+            android:background="@drawable/button_corner_accent"
+
+
+            />-->
+        <Button
+            android:id="@+id/scan_button"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/buttunborder"
+            android:scaleType="fitXY"
+            android:text="Scan Qr Code"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp"
+
+
+            />
+
+        <Button
+            android:id="@+id/save1"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+
+            android:background="@drawable/buttunborder"
+            android:scaleType="fitXY"
+            android:text="I Scanned QR Code"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+

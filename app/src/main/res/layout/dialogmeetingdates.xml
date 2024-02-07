@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:layout_height="340dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Select Meeting Date"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorvisitorReg"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_exhibitor_az"
+        android:layout_width="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:animateLayoutChanges="false"
+        android:layout_marginTop="10dp"
+        android:layout_height="200dp"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttunborder"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="#fff">
+
+    </Button>
+</LinearLayout>

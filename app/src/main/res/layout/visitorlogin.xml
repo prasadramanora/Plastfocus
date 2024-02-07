@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_editfields"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plastfococuslogo1"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Exhibitor Login"
+            android:textColor="@color/colurprimary"
+            android:textSize="22dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_editfields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp">
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/textvewborder"
+            android:hint="Enter UserName/Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textSize="12sp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_mobilepassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edt_email"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/textvewborder"
+            android:hint="Password/Mobile Number"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="8dp"
+
+            android:singleLine="true"
+            android:textSize="12sp">
+
+        </EditText>
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_registration"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:background="@color/colursecondary"
+            android:visibility="gone">
+
+        </View>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/edt_mobilepassword"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttunborder"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/tv_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_submit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Don't have an account?Register Now"
+            android:textAllCaps="false"
+            android:textColor="@color/colurprimary"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="gone">
+
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_below="@+id/btn_submit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/textvewborder"
+            android:gravity="center"
+android:visibility="gone"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="VIsitor Login"
+            android:textAllCaps="false"
+            android:textColor="@color/colurprimary"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_Logistics"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttunborder"
+            android:text="Logistics "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_Complaint"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:background="@drawable/buttunborder"
+            android:text="Complaint  "
+            android:textColor="#fff"
+            android:textSize="16sp">
+
+        </Button>
+    </LinearLayout>
+</RelativeLayout>

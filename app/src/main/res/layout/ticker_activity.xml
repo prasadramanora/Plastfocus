@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_mainhomepage"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.25"
+            android:background="@drawable/logostrip1">
+
+        </ImageView>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.50"
+            android:background="@drawable/logostrip"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.25"
+            android:background="@drawable/logostrip2">
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_logo"
+        android:background="@color/colurprimary">
+
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Welcome to PlastFocus"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_alignParentStart="true"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:padding="8dp"
+        shimmer:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        shimmer:spanCount="3"
+        tools:itemCount="6"
+        tools:listitem="@layout/homepage_recyclerview_item" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rvNumbers"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="16dp" />
+
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPager"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/ll_menubuttun"
+        android:layout_alignParentBottom="true"
+       android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_Logistics"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttunborder"
+            android:text="Logistics "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_Complaint"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textAllCaps="false"
+            android:background="@drawable/buttunborder"
+            android:text="Complaints"
+            android:textColor="#fff"
+            android:textSize="16sp">
+
+        </Button>
+    </LinearLayout>
+</RelativeLayout>

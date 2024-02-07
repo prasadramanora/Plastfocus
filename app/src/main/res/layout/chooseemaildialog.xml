@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:background="@drawable/textvewborder"
+    android:orientation="vertical"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorvisitorReg"
+        android:gravity="center"
+        android:text="Choose Email"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Email1"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="16dp">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_email2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Email2"
+        android:textColor="#000"
+        android:textSize="16dp">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view2"
+        android:background="@color/colorAccent">
+
+    </View>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:id="@+id/btn_cancel"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttunborderorange"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textStyle="bold">
+
+    </Button>
+</LinearLayout>

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "482990283002",
+    "project_id": "fir-checknotification",
+    "storage_bucket": "fir-checknotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482990283002:android:8037f22115db0ef58f5143",
+        "android_client_info": {
+          "package_name": "com.ramanora.firebasechecknotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482990283002-0r9gaf5q8u2i1d59qvq0ivcml8nlhjpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxCoyZdrzvulUhmJWvyjn5lzxTayCpd7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482990283002-0r9gaf5q8u2i1d59qvq0ivcml8nlhjpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482990283002:android:6a20e47a910b947f8f5143",
+        "android_client_info": {
+          "package_name": "com.ramanora.plastfocus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482990283002-0r9gaf5q8u2i1d59qvq0ivcml8nlhjpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxCoyZdrzvulUhmJWvyjn5lzxTayCpd7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482990283002-0r9gaf5q8u2i1d59qvq0ivcml8nlhjpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

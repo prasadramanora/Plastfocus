@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <ImageView
+        android:id="@+id/iv_imglogo"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+
+        android:layout_centerVertical="true"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plastfococuslogo1">
+
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_imglogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:text="Welcome to "
+        android:textColor="@color/colurprimary"
+        android:textSize="18dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_editfields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_imglogo"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/ll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_visitorregistartion"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/ll_view"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp"
+                android:background="@drawable/buttunborderorange"
+                android:text="Visitor Registartion"
+
+                android:textColor="#fff"
+                android:textSize="16sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_visitorlogin"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/ll_view"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/buttunborder"
+                android:text="Visitor Login"
+
+                android:textColor="#fff"
+                android:textSize="16sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_exibitorlogin"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/ll_view"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/buttunborder"
+                android:text="Exhibitor Login"
+
+                android:textColor="#fff"
+                android:textSize="16sp">
+
+            </Button>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

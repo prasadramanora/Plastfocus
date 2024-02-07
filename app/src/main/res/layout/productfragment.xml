@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentaz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_searchview"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <!-- Editext for Search -->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/editTextsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/textvewborder"
+            android:clickable="true"
+            android:queryHint="Search"
+
+            />
+
+
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_exhibitor_az"
+        android:layout_width="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:animateLayoutChanges="false"
+        android:layout_below="@+id/ll_searchview"
+        android:layout_height="match_parent"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

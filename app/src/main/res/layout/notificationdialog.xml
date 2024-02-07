@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="280dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/textvewborder"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_mesg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="PlastFocus"
+        android:textColor="@color/colorvisitorReg"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/plast">
+
+    </ImageView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colurprimary">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_messagetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="You have a Meeting Notification"
+        android:textColor="@color/colorvisitorReg"
+        android:textSize="15dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="hhhh"
+        android:textColor="@color/colurprimary"
+        android:textSize="16dp"
+        android:textStyle="bold">
+
+    </TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_gravity="bottom"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="100dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:background="@drawable/buttunborder"
+        android:text="Cancel"
+        android:textSize="16sp"
+        android:textColor="#fff">
+
+    </Button>
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="100dp"
+        android:layout_margin="4dp"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:background="@drawable/buttunborder"
+        android:text="View"
+        android:textSize="16sp"
+        android:textColor="#fff">
+
+    </Button>
+</LinearLayout>
+
+</LinearLayout>

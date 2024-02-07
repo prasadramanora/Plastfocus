@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/plast">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/tv_line"
+        android:layout_below="@+id/iv_img"
+        android:background="@color/colurprimary">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/tv_text"
+        android:textColor="@color/colurprimary"
+        android:text="Plastfocus App need allow permission ..."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_line"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <Button
+        android:layout_width="100dp"
+        android:text="Allow"
+        android:id="@+id/btn_permisson"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/buttunborder"
+        android:layout_below="@+id/tv_text"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp">
+
+    </Button>
+</RelativeLayout>
